@@ -32,4 +32,8 @@ class DaftarSenyumanViewController : UIViewController, UITableViewDataSource, UI
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("tableViewEmojiSague", sender: self)
+    }
+    
 }
