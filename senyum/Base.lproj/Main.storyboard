@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="542" y="107"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Senyum View Controller-->
         <scene sceneID="7sT-MT-l8Y">
             <objects>
-                <viewController id="W3h-cj-agM" sceneMemberID="viewController">
+                <viewController id="W3h-cj-agM" customClass="DetailSenyumViewController" customModule="senyum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="67b-9G-MxR"/>
                         <viewControllerLayoutGuide type="bottom" id="DPn-zP-pfL"/>
@@ -77,6 +77,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pRW-Pq-jGW"/>
+                    <connections>
+                        <outlet property="senyumLabel" destination="Nee-I1-EGK" id="xMt-Lf-S0u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9g4-Pp-CCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

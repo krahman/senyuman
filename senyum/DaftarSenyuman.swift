@@ -15,6 +15,8 @@ class DaftarSenyumanViewController : UIViewController, UITableViewDataSource, UI
     
     var senyumans = ["😀", "😵", "😄", "😈"]
     
+    var senyum = "👽"
+    
     override func viewDidLoad() {
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -33,7 +35,13 @@ class DaftarSenyumanViewController : UIViewController, UITableViewDataSource, UI
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.senyum = self.senyumans[indexPath.row]
         self.performSegueWithIdentifier("tableViewEmojiSague", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destinationController = segue.destinationViewController as! DetailSenyumViewController
+        destinationController.senyum = self.senyum
     }
     
 }

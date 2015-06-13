@@ -13,6 +13,7 @@
 		587E59651B2BFFAE0054AC53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587E59631B2BFFAE0054AC53 /* LaunchScreen.xib */; };
 		587E59711B2BFFAE0054AC53 /* senyumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587E59701B2BFFAE0054AC53 /* senyumTests.swift */; };
 		587E597B1B2C00F10054AC53 /* DaftarSenyuman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587E597A1B2C00F10054AC53 /* DaftarSenyuman.swift */; };
+		587E597F1B2C3CBA0054AC53 /* DetailSenyum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587E597E1B2C3CB90054AC53 /* DetailSenyum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		587E596F1B2BFFAE0054AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587E59701B2BFFAE0054AC53 /* senyumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senyumTests.swift; sourceTree = "<group>"; };
 		587E597A1B2C00F10054AC53 /* DaftarSenyuman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaftarSenyuman.swift; sourceTree = "<group>"; };
+		587E597E1B2C3CB90054AC53 /* DetailSenyum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSenyum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				587E595A1B2BFFAE0054AC53 /* AppDelegate.swift */,
 				587E597A1B2C00F10054AC53 /* DaftarSenyuman.swift */,
+				587E597E1B2C3CB90054AC53 /* DetailSenyum.swift */,
 				587E595E1B2BFFAE0054AC53 /* Main.storyboard */,
 				587E59611B2BFFAE0054AC53 /* Images.xcassets */,
 				587E59631B2BFFAE0054AC53 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587E597F1B2C3CBA0054AC53 /* DetailSenyum.swift in Sources */,
 				587E595B1B2BFFAE0054AC53 /* AppDelegate.swift in Sources */,
 				587E597B1B2C00F10054AC53 /* DaftarSenyuman.swift in Sources */,
 			);
