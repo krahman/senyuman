@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PSL-PA-adT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W3h-cj-agM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Daftar Senyuman View Controller-->
@@ -29,7 +30,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7G0-mK-JeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456" y="434"/>
+            <point key="canvasLocation" x="859" y="251"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7sT-MT-l8Y">
+            <objects>
+                <viewController id="W3h-cj-agM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="67b-9G-MxR"/>
+                        <viewControllerLayoutGuide type="bottom" id="DPn-zP-pfL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Duq-kD-bmN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an emoji definition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4g-l6-lct">
+                                <rect key="frame" x="26" y="529" width="548" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zVH-hO-z3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nee-I1-EGK">
+                                <rect key="frame" x="26" y="50" width="548" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="218" id="ZEC-8U-kw5"/>
+                                    <constraint firstAttribute="height" constant="218" id="pta-rY-jXF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="182"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x4g-l6-lct" firstAttribute="leading" secondItem="Duq-kD-bmN" secondAttribute="leadingMargin" constant="10" id="5bw-mW-EKb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x4g-l6-lct" secondAttribute="trailing" constant="10" id="83o-8h-6U0"/>
+                            <constraint firstItem="Nee-I1-EGK" firstAttribute="leading" secondItem="Duq-kD-bmN" secondAttribute="leadingMargin" constant="10" id="TlS-ZE-r4a"/>
+                            <constraint firstItem="Nee-I1-EGK" firstAttribute="top" secondItem="Duq-kD-bmN" secondAttribute="topMargin" constant="50" id="ilC-K8-ag9"/>
+                            <constraint firstItem="DPn-zP-pfL" firstAttribute="top" secondItem="x4g-l6-lct" secondAttribute="bottom" constant="50" id="udi-Ze-Oa6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nee-I1-EGK" secondAttribute="trailing" constant="10" id="vAv-xf-3W5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9g4-Pp-CCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="86"/>
         </scene>
     </scenes>
 </document>
